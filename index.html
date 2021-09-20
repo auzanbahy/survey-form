@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Music Streaming Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us on our research</p>
+    
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name 
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+
+        <label for="email" id="email-label">
+            Email 
+            <input type="email" id="email" placeholder="Enter your Email" required>
+        </label>
+
+        <label for="number" id="number-label">
+            Age 
+            <input type="number" id="number" placeholder="Age" min="17" max="30">
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            Select your major
+            <select id="dropdown">
+                <option>Major 1</option>
+                <option>Major 2</option>
+                <option>Major 3</option>
+                <option>Major 4</option>
+                <option>Major 5</option>
+                <option>Major 6</option>
+                <option>Major 7</option>
+            </select>
+        </label>
+
+        <label for="apps" id="apps-label">
+            What is your favorite music streaming apps? <br>
+            <input type="radio" name="apps" value="1"> Google Play Music <br>
+            <input type="radio" name="apps" value="2"> Amazon Music <br>
+            <input type="radio" name="apps" value="3"> Tidal <br>
+            <input type="radio" name="apps" value="4"> SoundCloud <br>
+            <input type="radio" name="apps" value="5"> Deezer <br>
+            <input type="radio" name="apps" value="6"> Spotify <br>
+            <input type="radio" name="apps" value="7"> Youtube Music <br>
+            <input type="radio" name="apps" value="8"> Joox <br>
+            <input type="radio" name="apps" value="9"> Apple Music <br>
+            <input type="radio" name="apps" value="10"> Jango <br>
+        </label>
+
+        <label for="features" id="features-label">
+            What features do you like in music streaming apps? <br>
+            <input type="checkbox" value="quality-of-sound"> Quality of sound <br>
+            <input type="checkbox" value="ease-of-making-playlist"> Ease of making playlist <br>
+            <input type="checkbox" value="ease-of-downloading-music"> Ease of downloading music <br>
+            <input type="checkbox" value="ease-of-discovering-new-music"> Ease of discovering new music <br>
+            <input type="checkbox" value="lyric-on-scren"> Lyric on-screen <br>
+            <input type="checkbox" value="offline-listening"> Offline listening <br>
+            <input type="checkbox" value="share-when-listening"> Share when listening <br>
+            <input type="checkbox" value="availability-of-video"> Availability of video <br>
+        </label>
+
+        <label for="comment" id="comment-label">
+            Any comments or suggestions?
+            <textarea id="comment" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
